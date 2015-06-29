@@ -4,11 +4,12 @@
 //
 //  Created by jwq on 15/6/29.
 //  Copyright (c) 2015年 panther-polaris. All rights reserved.
-//
+//该类用于做数据处理
 
 import UIKit
 
 class Data_processing: NSObject {
+    
 }
 /*
 该方法实现将字符串做MD5哈希处理
