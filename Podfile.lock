@@ -1,0 +1,16 @@
+PODS:
+  - Alamofire (1.2.3)
+  - AMap3DMap (2.5.1)
+  - JSONKit (1.4)
+
+DEPENDENCIES:
+  - Alamofire
+  - AMap3DMap
+  - JSONKit
+
+SPEC CHECKSUMS:
+  Alamofire: 5550bf0b575ed1a4bf9be572f9463e1015cc169e
+  AMap3DMap: 63349e4f7b6f097bce63853b24fe92ea0603a8f8
+  JSONKit: 5b69e804ea54d99293eed0fd2ce596c5703fefb0
+
+COCOAPODS: 0.37.2
