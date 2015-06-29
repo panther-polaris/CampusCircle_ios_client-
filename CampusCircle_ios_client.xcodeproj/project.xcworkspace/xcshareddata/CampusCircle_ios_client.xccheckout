@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C253626E-DFF7-4618-99BB-48F9175DD8CB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CampusCircle_ios_client</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>680C33F2A9390153456CD0C34193969B9496BEB3</key>
+		<string>github.com:guangchengli/CampusCircle_ios_client.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CampusCircle_ios_client.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>680C33F2A9390153456CD0C34193969B9496BEB3</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:guangchengli/CampusCircle_ios_client.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>680C33F2A9390153456CD0C34193969B9496BEB3</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>680C33F2A9390153456CD0C34193969B9496BEB3</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CampusCircle_ios_client</string>
+		</dict>
+	</array>
+</dict>
+</plist>

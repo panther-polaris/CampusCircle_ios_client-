@@ -14,6 +14,7 @@
 		8BC00AD71B40CB6F00ECA331 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BC00AD61B40CB6F00ECA331 /* Images.xcassets */; };
 		8BC00ADA1B40CB6F00ECA331 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BC00AD81B40CB6F00ECA331 /* LaunchScreen.xib */; };
 		8BC00AE61B40CB6F00ECA331 /* CampusCircle_ios_clientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC00AE51B40CB6F00ECA331 /* CampusCircle_ios_clientTests.swift */; };
+		8BC00AF01B40D22400ECA331 /* Data_processing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC00AEF1B40D22400ECA331 /* Data_processing.swift */; };
 		C50E0DC6FE3BE9726144BF2B /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDCDF2C5C7BACCF1420811CB /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,8 @@
 		8BC00ADF1B40CB6F00ECA331 /* CampusCircle_ios_clientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CampusCircle_ios_clientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BC00AE41B40CB6F00ECA331 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BC00AE51B40CB6F00ECA331 /* CampusCircle_ios_clientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusCircle_ios_clientTests.swift; sourceTree = "<group>"; };
+		8BC00AEF1B40D22400ECA331 /* Data_processing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data_processing.swift; sourceTree = "<group>"; };
+		8BC00AF11B40D24200ECA331 /* CampusCircle_ios_client-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CampusCircle_ios_client-Bridging-Header.h"; sourceTree = "<group>"; };
 		CDCDF2C5C7BACCF1420811CB /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D245D50C1366140EACEF59C3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		FE9AD631196EF36D135BEC51 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -110,6 +113,8 @@
 				8BC00AD81B40CB6F00ECA331 /* LaunchScreen.xib */,
 				8BC00ACE1B40CB6F00ECA331 /* CampusCircle_ios_client.xcdatamodeld */,
 				8BC00ACA1B40CB6F00ECA331 /* Supporting Files */,
+				8BC00AEF1B40D22400ECA331 /* Data_processing.swift */,
+				8BC00AF11B40D24200ECA331 /* CampusCircle_ios_client-Bridging-Header.h */,
 			);
 			path = CampusCircle_ios_client;
 			sourceTree = "<group>";
@@ -292,6 +297,7 @@
 			files = (
 				8BC00AD21B40CB6F00ECA331 /* ViewController.swift in Sources */,
 				8BC00ACD1B40CB6F00ECA331 /* AppDelegate.swift in Sources */,
+				8BC00AF01B40D22400ECA331 /* Data_processing.swift in Sources */,
 				8BC00AD01B40CB6F00ECA331 /* CampusCircle_ios_client.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,9 +426,12 @@
 			baseConfigurationReference = FE9AD631196EF36D135BEC51 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = CampusCircle_ios_client/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CampusCircle_ios_client/CampusCircle_ios_client-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -431,9 +440,11 @@
 			baseConfigurationReference = D245D50C1366140EACEF59C3 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = CampusCircle_ios_client/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CampusCircle_ios_client/CampusCircle_ios_client-Bridging-Header.h";
 			};
 			name = Release;
 		};
