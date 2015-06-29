@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import SwiftyJSON
 
 class ViewController: UIViewController {
     let url=""//在此设置服务器的地址
@@ -15,7 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var UserName: UITextField!
     @IBOutlet weak var PassWord: UITextField!
     @IBAction func submit(sender: UIButton) {
-        
+        checkUserName()
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,14 +28,17 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     func checkUserName()->Bool{
-        var result:Bool
-        result = true
+        var result:Bool = false
         var username:String = UserName.text
         Alamofire.request(.GET, url+"", parameters: ["username": username]).responseJSON() {
-            (_, _, JSON, _) in
-            println(JSON)
-            if JSON != nil{
-            
+            (_, _, dataFromNetwork, _) in
+            println(dataFromNetwork)
+            if (dataFromNetwork != nil){
+                let json = JSON(dataFromNetwork!)
+                let state = json[0]["state"]
+                result = state.bool!
+            }else{
+            println("通讯故障")
             }
         }
         return result
