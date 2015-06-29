@@ -27,19 +27,24 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     func checkUserName()->Bool{
+        var result:Bool
+        result = true
         var username:String = UserName.text
-        Alamofire.request(.GET, "http://httpbin.org/get", parameters: ["foo": "bar"])
-            .response { (request, response, data, error) in
-                println(request)
-                println(response)
-                println(error)
+        Alamofire.request(.GET, url+"", parameters: ["username": username]).responseJSON() {
+            (_, _, JSON, _) in
+            println(JSON)
+            if JSON != nil{
+            
+            }
         }
-        return true
+        return result
     
     }
     func checkPassWord()->Bool{
+        var result:Bool
+        result = true
         var password_md5:String = PassWord.text.md5()
-        return true
+        return result
     
     }
 
