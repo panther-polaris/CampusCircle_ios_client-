@@ -11,12 +11,13 @@ import Alamofire
 import SwiftyJSON
 
 class ViewController: UIViewController {
-    let url=""//在此设置服务器的地址
+    let url="10."//在此设置服务器的地址
 
     @IBOutlet weak var UserName: UITextField!
     @IBOutlet weak var PassWord: UITextField!
     @IBAction func submit(sender: UIButton) {
         checkUserName()
+        checkPassWord()
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,4 +55,8 @@ class ViewController: UIViewController {
 
 
 }
+
+      
+
+
 
