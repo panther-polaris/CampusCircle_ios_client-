@@ -9,49 +9,78 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
-
-class ViewController: UIViewController {
-    let url=""//在此设置服务器的地址
+var data_transmission = Data_transmission()
+var data_prcessing = Data_processing()
+var safety = Safety()
+let url = "http://10.10.10.73"   //在此设置服务器的地址
+class ViewController: UIViewController{
 
     @IBOutlet weak var UserName: UITextField!
     @IBOutlet weak var PassWord: UITextField!
-    @IBAction func submit(sender: UIButton) {
+    //@IBAction func submit(sender: UIButton) {
+    //    println("a")
+    //           }
+    @IBAction func loginbtn(sender: AnyObject) {
         checkUserName()
+        /*
+        self.performSegueWithIdentifier("login", sender: self)
+        
+        var ReturnFrist: Bool = checkUserName()
+        if (ReturnFrist){
+            if checkLogin(){
+        
+            }else{
+                println("密码错误")
+            }
+        }else{
+            println("用户名不存在")
+        }
+        */
     }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     func checkUserName()->Bool{
-        var result:Bool = false
+
+        var state:Bool = false
         var username:String = UserName.text
-        Alamofire.request(.GET, url+"", parameters: ["username": username]).responseJSON() {
+        Alamofire.request(.GET, url+"/a.php", parameters: ["username":username]).responseJSON() {
             (_, _, dataFromNetwork, _) in
-            println(dataFromNetwork)
+            //println(dataFromNetwork)
             if (dataFromNetwork != nil){
                 let json = JSON(dataFromNetwork!)
-                let state = json[0]["state"]
-                result = state.bool!
+                state = Bool(json["state"])
+                println(state)                //true
             }else{
-            println("通讯故障")
+                println("通讯故障")
             }
         }
-        return result
-    
+        //println(state)
+        return state
     }
-    func checkPassWord()->Bool{
-        var result:Bool
-        result = true
-        var password_md5:String = PassWord.text.md5()
-        return result
-    
-    }
+    func checkLogin()->Bool{
+        
+        var state:Bool = false
+        var Login: String = safety.LoginEncryption(PassWord.text)
 
+        Alamofire.request(.GET, url+"/a.php", parameters: ["username":Login]).responseJSON() {
+            (_, _, dataFromNetwork, _) in
+            if (dataFromNetwork != nil){
+                let json = JSON(dataFromNetwork!)
+                let state = Bool(json["state"])
+            }else{
+                println("通讯故障")
+            }
+        }
+        return state
+    }
 
 }
 
