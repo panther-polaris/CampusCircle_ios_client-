@@ -37,7 +37,7 @@ class ViewController: UIViewController{
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    /////////////////////////
+    ///////////////////
     func checkLogin()->Bool{
         var state:Bool = false
         var username:String = UserName.text
