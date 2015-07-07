@@ -15,30 +15,20 @@ var safety = Safety()
 let url = "http://10.10.10.73"   //在此设置服务器的地址
 class ViewController: UIViewController{
 
+    //@IBOutlet weak var UserName: UITextField!
     @IBOutlet weak var UserName: UITextField!
+    //(textField.placeholder="请输入用户名")
     @IBOutlet weak var PassWord: UITextField!
     //@IBAction func submit(sender: UIButton) {
     //    println("a")
     //           }
     @IBAction func loginbtn(sender: AnyObject) {
-        checkUserName()
-        /*
+        checkLogin()
+        
         self.performSegueWithIdentifier("login", sender: self)
-        
-        var ReturnFrist: Bool = checkUserName()
-        if (ReturnFrist){
-            if checkLogin(){
-        
-            }else{
-                println("密码错误")
-            }
-        }else{
-            println("用户名不存在")
-        }
-        */
+
     }
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -47,40 +37,25 @@ class ViewController: UIViewController{
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    func checkUserName()->Bool{
-
+    func checkLogin()->Bool{
         var state:Bool = false
         var username:String = UserName.text
-        Alamofire.request(.GET, url+"/a.php", parameters: ["username":username]).responseJSON() {
+        var Password_Time_md5: String = safety.LoginEncryption(PassWord.text)
+        var UserMessage:String = username + "&" + Password_Time_md5
+        println()
+        Alamofire.request(.GET, url+"/test.php", parameters: ["usermessage":UserMessage]).responseJSON() {
             (_, _, dataFromNetwork, _) in
-            //println(dataFromNetwork)
+            println(dataFromNetwork)
             if (dataFromNetwork != nil){
                 let json = JSON(dataFromNetwork!)
-                state = Bool(json["state"])
-                println(state)                //true
-            }else{
-                println("通讯故障")
-            }
-        }
-        //println(state)
-        return state
-    }
-    func checkLogin()->Bool{
-        
-        var state:Bool = false
-        var Login: String = safety.LoginEncryption(PassWord.text)
-
-        Alamofire.request(.GET, url+"/a.php", parameters: ["username":Login]).responseJSON() {
-            (_, _, dataFromNetwork, _) in
-            if (dataFromNetwork != nil){
-                let json = JSON(dataFromNetwork!)
-                let state = Bool(json["state"])
+                let state = json["state"]
             }else{
                 println("通讯故障")
             }
         }
         return state
     }
-
 }
+
+
 

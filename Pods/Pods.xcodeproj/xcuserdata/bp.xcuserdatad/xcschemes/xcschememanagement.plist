@@ -6,33 +6,33 @@
 	<dict>
 		<key>Pods-Alamofire.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-SwiftyJSON.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>26C15667898113AA615AC10A</key>
+		<key>179620A05D3B3F33DCD20283</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7D38816D7AE378EDD2ECFB47</key>
+		<key>24766FDF98D4E724CDF4D818</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>80744101665F6A1B1D2E97D4</key>
+		<key>4CC2B084D33E196E373E48A7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
