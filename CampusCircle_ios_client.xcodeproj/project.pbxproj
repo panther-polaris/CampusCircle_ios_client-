@@ -22,6 +22,8 @@
 		8BC00AE61B40CB6F00ECA331 /* CampusCircle_ios_clientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC00AE51B40CB6F00ECA331 /* CampusCircle_ios_clientTests.swift */; };
 		8BC00AF01B40D22400ECA331 /* Data_processing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC00AEF1B40D22400ECA331 /* Data_processing.swift */; };
 		C50E0DC6FE3BE9726144BF2B /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDCDF2C5C7BACCF1420811CB /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		E065CF291B48E16200CD3B28 /* Data_transmission.swift in Sources */ = {isa = PBXBuildFile; fileRef = E065CF281B48E16200CD3B28 /* Data_transmission.swift */; };
+		E072C0DF1B49767F005D6C47 /* Safety.swift in Sources */ = {isa = PBXBuildFile; fileRef = E072C0DE1B49767F005D6C47 /* Safety.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		8BC00AF11B40D24200ECA331 /* CampusCircle_ios_client-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CampusCircle_ios_client-Bridging-Header.h"; sourceTree = "<group>"; };
 		CDCDF2C5C7BACCF1420811CB /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D245D50C1366140EACEF59C3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		E065CF281B48E16200CD3B28 /* Data_transmission.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data_transmission.swift; sourceTree = "<group>"; };
+		E072C0DE1B49767F005D6C47 /* Safety.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Safety.swift; sourceTree = "<group>"; };
 		FE9AD631196EF36D135BEC51 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,8 +159,10 @@
 				8BAAD2C91B4BDF5B0082293C /* 未命名文件夹 3 */,
 				8BC00AD81B40CB6F00ECA331 /* LaunchScreen.xib */,
 				8BC00ACE1B40CB6F00ECA331 /* CampusCircle_ios_client.xcdatamodeld */,
-				8BC00ACA1B40CB6F00ECA331 /* Supporting Files */,
 				8BC00AEF1B40D22400ECA331 /* Data_processing.swift */,
+				E065CF281B48E16200CD3B28 /* Data_transmission.swift */,
+				E072C0DE1B49767F005D6C47 /* Safety.swift */,
+				8BC00ACA1B40CB6F00ECA331 /* Supporting Files */,
 				8BC00AF11B40D24200ECA331 /* CampusCircle_ios_client-Bridging-Header.h */,
 			);
 			path = CampusCircle_ios_client;
@@ -369,6 +375,8 @@
 				8BC00AD21B40CB6F00ECA331 /* ViewController.swift in Sources */,
 				8BC00ACD1B40CB6F00ECA331 /* AppDelegate.swift in Sources */,
 				8BC00AF01B40D22400ECA331 /* Data_processing.swift in Sources */,
+				E072C0DF1B49767F005D6C47 /* Safety.swift in Sources */,
+				E065CF291B48E16200CD3B28 /* Data_transmission.swift in Sources */,
 				8BC00AD01B40CB6F00ECA331 /* CampusCircle_ios_client.xcdatamodeld in Sources */,
 				8B1C98A31B4957DB00965D3C /* shujuchuanshu.swift in Sources */,
 			);

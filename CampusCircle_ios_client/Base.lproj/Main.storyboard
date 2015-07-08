@@ -12,6 +12,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+<<<<<<< HEAD
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="90651d9b033b5bb55f76f57836d3d539b700bc61.jpg" id="izn-Tc-8bg">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="151"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -57,6 +58,27 @@
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="TaS-eZ-EJY">
                                 <rect key="frame" x="243" y="149" width="77" height="30"/>
+=======
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="用户名" minimumFontSize="17" id="0qM-H7-lOV">
+                                <rect key="frame" x="60" y="197" width="200" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="abS-m1-7B9">
+                                <rect key="frame" x="137" y="328" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="登录">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginbtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Eub-fL-hDv"/>
+                                    <segue destination="YMM-CZ-gsB" kind="modal" id="P5E-VL-yYZ"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="密码" minimumFontSize="17" id="R8I-XT-KuN">
+                                <rect key="frame" x="60" y="269" width="200" height="30"/>
+>>>>>>> 9ef56b0346c6af9584b80dcbbc74969cefd327ce
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -158,13 +180,23 @@
                                 </items>
                             </toolbar>
                         </subviews>
+<<<<<<< HEAD
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
+=======
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+>>>>>>> 9ef56b0346c6af9584b80dcbbc74969cefd327ce
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+<<<<<<< HEAD
                         <outlet property="searchDisplayController" destination="mI4-XN-Qih" id="mUi-vw-H4L"/>
+=======
+                        <outlet property="PassWord" destination="R8I-XT-KuN" id="nMH-o0-NKC"/>
+                        <outlet property="UserName" destination="0qM-H7-lOV" id="jN2-TT-qT5"/>
+                        <segue destination="t6N-be-l3G" kind="modal" identifier="login" id="cXg-Ug-dTa"/>
+>>>>>>> 9ef56b0346c6af9584b80dcbbc74969cefd327ce
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -220,6 +252,46 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BXh-KR-3o3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
+=======
+            <point key="canvasLocation" x="136" y="385"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="3vq-eg-T1Q">
+            <objects>
+                <viewController id="YMM-CZ-gsB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yTu-5G-ilu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OEd-GZ-fY8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="597" y="589"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8fe-AG-UaF">
+            <objects>
+                <viewController id="t6N-be-l3G" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fh7-nt-MAf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="JAj-fQ-Mud">
+                                <rect key="frame" x="112" y="245" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1en-HZ-QSx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="597" y="-106"/>
+>>>>>>> 9ef56b0346c6af9584b80dcbbc74969cefd327ce
         </scene>
     </scenes>
     <resources>
