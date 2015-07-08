@@ -8,7 +8,7 @@
 
 import UIKit
 
-    class Safety: NSObject {
+class Safety: NSObject {
     
     func TimeStamp() ->NSTimeInterval{
         var timeInterval:NSTimeInterval = 0
