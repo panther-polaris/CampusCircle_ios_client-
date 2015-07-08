@@ -56,7 +56,22 @@ class ViewController: UIViewController {
 
 }
 
-      
+/*
+该方法实现将密码进行MD5加密
+使用方法事例：
+var returnPassword = Data_transmission()
+returnPassword.checkPassWord(PassWord.text)
+*/
+func LoginEncryption(PassWord: String)-> String{
+    var timestamp: Int,timestamp: Int
+    timestamp = Int(TimeStamp())
+    timestamp = timestamp / 120
+    var userlogin: String = PassWord.md5() + String(times)
+    var userlogin_md5: String = userlogin.md5()
+    userlogin_md5 = userlogin.md5
+    return userlogin_md5
+}
+
 
 
 

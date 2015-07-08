@@ -4,23 +4,24 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-Alamofire.xcscheme</key>
+		<key>RSS.xcscheme</key>
 		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-SwiftyJSON.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
+			<key>orderHint</key>
+			<integer>4</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict/>
+	<dict>
+		<key>8B1C98AC1B49EFFE00965D3C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8B1C98C41B49F00000965D3C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
 </dict>
 </plist>

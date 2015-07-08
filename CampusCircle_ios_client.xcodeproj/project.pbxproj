@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		8B1C98A31B4957DB00965D3C /* shujuchuanshu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1C98A21B4957DB00965D3C /* shujuchuanshu.swift */; };
 		8B89C25B1B489C510084571A /* 未命名文件夹 2 in Resources */ = {isa = PBXBuildFile; fileRef = 8B89C25A1B489C510084571A /* 未命名文件夹 2 */; };
+		8BAAD2CA1B4BDF5B0082293C /* 未命名文件夹 3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BAAD2C91B4BDF5B0082293C /* 未命名文件夹 3 */; };
+		8BAAD2CE1B4BE1050082293C /*  4 in Resources */ = {isa = PBXBuildFile; fileRef = 8BAAD2CD1B4BE1050082293C /*  4 */; };
+		8BAAD2D21B4BF49D0082293C /* 588 in Resources */ = {isa = PBXBuildFile; fileRef = 8BAAD2D11B4BF49D0082293C /* 588 */; };
+		8BAAD2D41B4BF9430082293C /* 47 4 in Resources */ = {isa = PBXBuildFile; fileRef = 8BAAD2D31B4BF9430082293C /* 47 4 */; };
 		8BC00ACD1B40CB6F00ECA331 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC00ACC1B40CB6F00ECA331 /* AppDelegate.swift */; };
 		8BC00AD01B40CB6F00ECA331 /* CampusCircle_ios_client.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8BC00ACE1B40CB6F00ECA331 /* CampusCircle_ios_client.xcdatamodeld */; };
 		8BC00AD21B40CB6F00ECA331 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC00AD11B40CB6F00ECA331 /* ViewController.swift */; };
@@ -21,6 +25,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		8B1C99141B49F21200965D3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B1C990F1B49F21100965D3C /* RSS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B1C98E71B49F21100965D3C;
+			remoteInfo = RSS;
+		};
+		8B1C99161B49F21200965D3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B1C990F1B49F21100965D3C /* RSS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B1C98FF1B49F21100965D3C;
+			remoteInfo = RSSTests;
+		};
 		8BC00AE01B40CB6F00ECA331 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8BC00ABF1B40CB6F00ECA331 /* Project object */;
@@ -32,7 +50,12 @@
 
 /* Begin PBXFileReference section */
 		8B1C98A21B4957DB00965D3C /* shujuchuanshu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = shujuchuanshu.swift; sourceTree = "<group>"; };
+		8B1C990F1B49F21100965D3C /* RSS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RSS.xcodeproj; path = ../../../RSS/RSS.xcodeproj; sourceTree = "<group>"; };
 		8B89C25A1B489C510084571A /* 未命名文件夹 2 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "未命名文件夹 2"; sourceTree = "<group>"; };
+		8BAAD2C91B4BDF5B0082293C /* 未命名文件夹 3 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "未命名文件夹 3"; sourceTree = "<group>"; };
+		8BAAD2CD1B4BE1050082293C /*  4 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = " 4"; sourceTree = "<group>"; };
+		8BAAD2D11B4BF49D0082293C /* 588 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = 588; sourceTree = "<group>"; };
+		8BAAD2D31B4BF9430082293C /* 47 4 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "47 4"; sourceTree = "<group>"; };
 		8BC00AC71B40CB6F00ECA331 /* CampusCircle_ios_client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CampusCircle_ios_client.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BC00ACB1B40CB6F00ECA331 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BC00ACC1B40CB6F00ECA331 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +110,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8B1C99101B49F21100965D3C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B1C99151B49F21200965D3C /* RSS.app */,
+				8B1C99171B49F21200965D3C /* RSSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		8BC00ABE1B40CB6F00ECA331 = {
 			isa = PBXGroup;
 			children = (
@@ -112,10 +144,15 @@
 			children = (
 				8BC00ACC1B40CB6F00ECA331 /* AppDelegate.swift */,
 				8BC00AD11B40CB6F00ECA331 /* ViewController.swift */,
+				8B1C990F1B49F21100965D3C /* RSS.xcodeproj */,
 				8BC00AD31B40CB6F00ECA331 /* Main.storyboard */,
 				8B1C98A21B4957DB00965D3C /* shujuchuanshu.swift */,
 				8B89C25A1B489C510084571A /* 未命名文件夹 2 */,
 				8BC00AD61B40CB6F00ECA331 /* Images.xcassets */,
+				8BAAD2D31B4BF9430082293C /* 47 4 */,
+				8BAAD2D11B4BF49D0082293C /* 588 */,
+				8BAAD2CD1B4BE1050082293C /*  4 */,
+				8BAAD2C91B4BDF5B0082293C /* 未命名文件夹 3 */,
 				8BC00AD81B40CB6F00ECA331 /* LaunchScreen.xib */,
 				8BC00ACE1B40CB6F00ECA331 /* CampusCircle_ios_client.xcdatamodeld */,
 				8BC00ACA1B40CB6F00ECA331 /* Supporting Files */,
@@ -220,6 +257,12 @@
 			mainGroup = 8BC00ABE1B40CB6F00ECA331;
 			productRefGroup = 8BC00AC81B40CB6F00ECA331 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8B1C99101B49F21100965D3C /* Products */;
+					ProjectRef = 8B1C990F1B49F21100965D3C /* RSS.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8BC00AC61B40CB6F00ECA331 /* CampusCircle_ios_client */,
@@ -228,14 +271,35 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		8B1C99151B49F21200965D3C /* RSS.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = RSS.app;
+			remoteRef = 8B1C99141B49F21200965D3C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8B1C99171B49F21200965D3C /* RSSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RSSTests.xctest;
+			remoteRef = 8B1C99161B49F21200965D3C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		8BC00AC51B40CB6F00ECA331 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8B89C25B1B489C510084571A /* 未命名文件夹 2 in Resources */,
+				8BAAD2CA1B4BDF5B0082293C /* 未命名文件夹 3 in Resources */,
+				8BAAD2CE1B4BE1050082293C /*  4 in Resources */,
+				8BAAD2D41B4BF9430082293C /* 47 4 in Resources */,
 				8BC00AD51B40CB6F00ECA331 /* Main.storyboard in Resources */,
 				8BC00ADA1B40CB6F00ECA331 /* LaunchScreen.xib in Resources */,
+				8BAAD2D21B4BF49D0082293C /* 588 in Resources */,
 				8BC00AD71B40CB6F00ECA331 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
